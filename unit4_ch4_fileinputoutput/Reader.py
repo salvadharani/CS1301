@@ -18,6 +18,17 @@
 
 
 #Write your function here!
+def reader(file):
+    inputfile = open(file, 'r')
+    data = []
+    for line in inputfile:
+        data.append(line.strip())
+    inputfile.close()
+    grades =[]
+    for line in data:
+        grades.append((int(line.split()[0]), str(line.split()[1]), int(line.split()[2]), int(line.split()[3]),
+                       float(line.split()[4])))
+    return grades
 
 
 
@@ -29,3 +40,4 @@
 #print:
 #[(1, 'assignment_1', 85, 100, 0.25), (2, 'test_1', 90, 100, 0.25), (3, 'exam_1', 95, 100, 0.5)]
 print(reader("sample.cs1301"))
+print(reader("test.txt"))
