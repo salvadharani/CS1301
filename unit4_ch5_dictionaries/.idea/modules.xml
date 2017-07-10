@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../unit4_ch4_fileinputoutput/.idea/unit4_ch4_fileinputoutput.iml" filepath="$PROJECT_DIR$/../unit4_ch4_fileinputoutput/.idea/unit4_ch4_fileinputoutput.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/unit4_ch5_dictionaries.iml" filepath="$PROJECT_DIR$/.idea/unit4_ch5_dictionaries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../unit5_ch1_objects/.idea/unit5_ch1_objects.iml" filepath="$PROJECT_DIR$/../unit5_ch1_objects/.idea/unit5_ch1_objects.iml" />
     </modules>
   </component>
 </project>
