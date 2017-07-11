@@ -30,15 +30,15 @@
 
 class Burrito:
     def __init__(self, meat, to_go, rice, beans, extra_meat=False, guacamole=False, cheese=False, pico=False, corn=False):
-        self.setmeat(meat)
-        self.setto_go(to_go)
-        self.setrice(rice)
-        self.setbeans(beans)
-        self.setextra_meat(extra_meat)
-        self.setguacamole(guacamole)
-        self.setcheese(cheese)
-        self.setpico(pico)
-        self.setcorn(corn)
+        self.set_meat(meat)
+        self.set_to_go(to_go)
+        self.set_rice(rice)
+        self.set_beans(beans)
+        self.set_extra_meat(extra_meat)
+        self.set_guacamole(guacamole)
+        self.set_cheese(cheese)
+        self.set_pico(pico)
+        self.set_corn(corn)
 
 #The code below will test your class. If it is written
 #correctly, this will print True, then False. Note,
@@ -89,35 +89,35 @@ class Burrito:
 
 #Write your code here!
 
-    def getmeat(self):
+    def get_meat(self):
         return self.meat
 
-    def getto_go(self):
+    def get_to_go(self):
         return self.to_go
 
-    def getrice(self):
+    def get_rice(self):
         return self.rice
 
-    def getbeans(self):
+    def get_beans(self):
         return self.beans
 
-    def getextra_meat(self):
+    def get_extra_meat(self):
         return self.extra_meat
 
-    def getguacamole(self):
+    def get_guacamole(self):
         return self.guacamole
 
-    def getcheese(self):
+    def get_cheese(self):
         return self.cheese
 
-    def getpico(self):
+    def get_pico(self):
         return self.pico
 
-    def getcorn(self):
-        return self.pico
+    def get_corn(self):
+        return self.corn
 
 
-    def setmeat(self, meat):
+    def set_meat(self, meat):
         if meat in ["chicken", "pork", "steak", "tofu"]:
             self.meat = meat
             # print("{} added".format(self.meat))
@@ -125,14 +125,14 @@ class Burrito:
             self.meat = False
             # print("No meat")
 
-    def setto_go(self, to_go):
+    def set_to_go(self, to_go):
         if type(to_go) == bool:
             self.to_go = to_go
             # print("to go {}".format(self.to_go))
         else:
             print("invalid value")
 
-    def setrice(self, rice):
+    def set_rice(self, rice):
         if rice in ["brown", "white"]:
             self.rice = rice
             # print("{} rice added".format(self.rice))
@@ -140,7 +140,7 @@ class Burrito:
             self.rice = False
             # print("no rice")
 
-    def setbeans(self, beans):
+    def set_beans(self, beans):
         if beans in ["black", "pinto"]:
             self.beans = beans
             # print("{} beans added".format(self.beans))
@@ -148,35 +148,35 @@ class Burrito:
             self.beans = False
             # print("no beans")
 
-    def setextra_meat(self, extra_meat):
+    def set_extra_meat(self, extra_meat):
         if type(extra_meat) == bool:
             self.extra_meat = extra_meat
             # print("extra meat {}".format(self.extra_meat))
         else:
             print("invalid value")
 
-    def setguacamole(self, guacamole):
+    def set_guacamole(self, guacamole):
         if type(guacamole) == bool:
             self.guacamole = guacamole
             # print("guacamole {}".format(self.guacamole))
         else:
             print("invalid value")
 
-    def setcheese(self, cheese):
+    def set_cheese(self, cheese):
         if type(cheese) == bool:
             self.cheese = cheese
             # print("cheese {}".format(self.cheese))
         else:
             print("invalid value")
 
-    def setpico(self, pico):
+    def set_pico(self, pico):
         if type(pico) == bool:
             self.pico = pico
             # print("pico {}".format(self.pico))
         else:
             print("invalid value")
 
-    def setcorn(self, corn):
+    def set_corn(self, corn):
         if type(corn) == bool:
             self.corn = corn
             # print("corn {}".format(self.corn))
