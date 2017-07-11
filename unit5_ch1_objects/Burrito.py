@@ -186,6 +186,56 @@ class Burrito:
 #Feel free to add code below to test out the class that
 #you've written. It won't be used for grading.
 
+# order1 = Burrito("chicken", to_go=False, rice="brown", beans="black", extra_meat=True, guacamole=False, cheese=True, pico=True, corn=True)
+# print("Meat", order1.meat)
+# print("To go", order1.to_go)
+# print("Rice", order1.rice)
+# print("Beans", order1.beans)
+# print("Extra meat", order1.extra_meat)
+# print("Cheese", order1.cheese)
+# print("Pico", order1.pico)
+# print("Corn", order1.corn)
+# print("Guacamole", order1.guacamole)
+
+# Problem 5.1.4
+
+#Copy your Burrito class from the last exercise. Now, add
+#a method called "get_cost" to the Burrito class. It should
+#accept zero arguments (except for "self", of course) and
+#it will return a float. Here's how the cost should be
+#computed:
+#
+# - The base cost of a burrito is $5
+# - If the burrito's meat is "chicken", "pork" or "tofu",
+#   add $1 to the cost
+# - If the burrito's meat is "steak", add $1.50 to the cost
+# - If extra_meat is True and meat is not set to False, add
+#   $1 to the cost
+# - If guacamole is True, add $0.75 to the cost
+
+
+#Write your code here!
+
+    def get_cost(self):
+        self.price = 5.00
+        if self.meat in ["chicken", "pork", "tofu"]:
+            self.price += 1.00
+
+        if self.meat == "steak":
+            self.price += 1.50
+
+        if self.extra_meat == True and self.meat != False:
+            self.price += 1.00
+
+        if self.guacamole == True:
+            self.price += 0.75
+
+        return "{:.2f}".format(self.price)
+
+
+#Feel free to add code below to test out the class that
+#you've written. It won't be used for grading.
+
 order1 = Burrito("chicken", to_go=False, rice="brown", beans="black", extra_meat=True, guacamole=False, cheese=True, pico=True, corn=True)
 print("Meat", order1.meat)
 print("To go", order1.to_go)
@@ -197,4 +247,5 @@ print("Pico", order1.pico)
 print("Corn", order1.corn)
 print("Guacamole", order1.guacamole)
 
-
+print()
+print("Cost", order1.get_cost())
