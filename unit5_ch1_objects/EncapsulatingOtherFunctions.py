@@ -16,7 +16,10 @@ class BankAccount:
         self.balance -= amount
         self.log("-" + str(amount) + ": " + str(self.balance))
 
-    def log(self, message): ...
+    def log(self, message):
+        myLog = open("Log.txt", "a")
+        print(message, file=myLog)
+        myLog.close()
 
 myBankAccount = BankAccount("David Joyner")
 myBankAccount.deposit(20.0)
